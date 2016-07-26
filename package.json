@@ -26,7 +26,7 @@
     "lint": "",
     "test": "",
     "build": "gulp build",
-    "dist": "",
+    "dist": "NODE_ENV=production gulp build",
     "watch": "",
     "deploy": ""
   }

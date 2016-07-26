@@ -3,7 +3,7 @@ var path = require('path');
 var sourcePath = path.join('.', 'static_src');
 var distPath = path.join('.', 'static');
 
-var prod = false;
+var prod = process.env.NODE_ENV === 'production';
 
 module.exports = {
     prod: prod,
