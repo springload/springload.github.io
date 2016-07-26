@@ -9,7 +9,7 @@ var path = require('path');
 var sass = require('gulp-sass');
 // var sourcemaps = require('gulp-sourcemaps');
 // var gutil = require('gulp-util');
-// var plz = require("gulp-pleeease");
+var plz = require("gulp-pleeease");
 var size = require('gulp-size');
 // var bs = require('browser-sync').get('main');
 
@@ -24,7 +24,7 @@ gulp.task('css', function() {
             // bs.notify(err.message, 10000);
             this.emit('end');
         })
-        // .pipe(plz( config.PlzOptions ))
+        .pipe(plz( config.PlzOptions ))
         // .pipe(config.prod ? gutil.noop() : sourcemaps.write())
         .pipe(size({ title: config.prod ? 'CSS' : 'CSS (unminified)', showFiles: true, gzip: config.prod }))
         .pipe(gulp.dest( config.paths.css ));
