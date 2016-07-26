@@ -10,7 +10,7 @@ var sass = require('gulp-sass');
 // var sourcemaps = require('gulp-sourcemaps');
 // var gutil = require('gulp-util');
 // var plz = require("gulp-pleeease");
-// var size = require('gulp-size');
+var size = require('gulp-size');
 // var bs = require('browser-sync').get('main');
 
 var sourceFiles = path.join( config.paths.sass, '**', "*.scss" );
@@ -26,7 +26,7 @@ gulp.task('css', function() {
         })
         // .pipe(plz( config.PlzOptions ))
         // .pipe(config.prod ? gutil.noop() : sourcemaps.write())
-        // .pipe(size({ title: config.prod ? 'CSS' : 'CSS (unminified)', showFiles: true, gzip: config.prod }))
+        .pipe(size({ title: config.prod ? 'CSS' : 'CSS (unminified)', showFiles: true, gzip: config.prod }))
         .pipe(gulp.dest( config.paths.css ));
         // .pipe(bs.stream());
 });
