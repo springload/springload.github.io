@@ -1,0 +1,23 @@
+{
+  "name": "springload.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/springload/springload.github.io"
+  },
+  "engines": {
+    "node": "^4.2.6"
+  },
+  "devDependencies": {},
+  "dependencies": {},
+  "scripts": {
+    "start": "PORT=FIXME wrangler serve www/",
+    "lint": "",
+    "test": "",
+    "build": "",
+    "dist": "",
+    "watch": "",
+    "deploy": ""
+  }
+}
