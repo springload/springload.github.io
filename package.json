@@ -36,6 +36,7 @@
     "build": "gulp build && npm run html",
     "dist": "NODE_ENV=production npm run build",
     "watch": "",
-    "deploy": ""
+    "shrinkwrap": "npm shrinkwrap --dev",
+    "deploy": "git push origin master"
   }
 }
