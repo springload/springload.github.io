@@ -9,13 +9,16 @@
   "engines": {
     "node": "^4.2.6"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  },
   "dependencies": {},
   "scripts": {
     "start": "PORT=FIXME wrangler serve www/",
     "lint": "",
     "test": "",
-    "build": "",
+    "build": "gulp css",
     "dist": "",
     "watch": "",
     "deploy": ""
