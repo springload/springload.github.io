@@ -30,8 +30,11 @@
     "start": "PORT=FIXME wrangler serve www/",
     "lint": "",
     "test": "",
-    "build": "gulp build",
-    "dist": "NODE_ENV=production gulp build",
+    "css": "gulp css",
+    "js": "gulp js",
+    "html": "wrangler build -t templates/ content/ www/",
+    "build": "gulp build && npm run html",
+    "dist": "NODE_ENV=production npm run build",
     "watch": "",
     "deploy": ""
   }
