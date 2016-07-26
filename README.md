@@ -20,6 +20,7 @@ To install our dependencies:
 ```sh
 nvm install
 # Then, install all project dependencies.
+pip install wrangler
 npm install
 ```
 
