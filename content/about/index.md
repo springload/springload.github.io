@@ -1,7 +1,7 @@
 ---
 title: 'Hello, world!'
 alias: 'Yo, dawg!'
-template: 'template.j2'
+template: 'page.html'
 weight: 0
 hide_from_nav: false
 ---
@@ -9,7 +9,7 @@ hide_from_nav: false
 # A heading!
 Some paragraph text
 
-## Another heading! 
+## Another heading!
 Even more text
 
 ---

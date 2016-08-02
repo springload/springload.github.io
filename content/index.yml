@@ -1,0 +1,22 @@
+meta:
+  title: 'Springload OSS hub'
+  description: Springload OSS hub
+  keywords:
+  - Springload
+  - OSS
+  - Hub
+  template: index.html
+data:
+  projects:
+  - href: https://wagtail.io/
+    title: Wagtail
+    featured: true
+  - href: https://github.com/springload/madewithwagtail
+    title: Made with Wagtail
+    featured: false
+  - href: https://springload.github.io/react-simpler-select/
+    title: react-simpler-select
+    featured: false
+  - href: https://springload.github.io/react-svg-icon/
+    title: react-svg-icon
+    featured: false
