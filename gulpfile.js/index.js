@@ -1,3 +1,4 @@
+require('./tasks/watch');
 require('./tasks/content');
 require('./tasks/css');
 require('./tasks/js');
