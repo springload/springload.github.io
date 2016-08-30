@@ -1,9 +1,40 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <ul>
+    <div class="grid">
         {% for project in data.projects %}
-            <li><a href="{{ project.href }}">{{ project.title }}</a></li>
+            <div class="grid-item">
+                <a href="{{ project.href }}">
+                    <h3>{{ project.title }}</h3>
+                    <span>{{ project.star_count }}</span>
+                    <span>{{ project.fork_count }}</span>
+                    <p>{{ project.description }}</p>
+                </a>
+            </div>
         {% endfor %}
-    </ul>
+    </div>
+
+    <div class="grid">
+        {% for blog_post in data.blog_posts %}
+
+            {% if data.blog_posts.image %}
+                {% set has_image = true %}
+            {% endif %}
+
+            <div class="grid-item">
+                <a href="{{ blog_post.href }}">
+                    {% if has_image %}
+                        <img src="{{ blog_post.image }}">
+                    {% endif %}
+                    <h3>{{ blog_post.title }}</h3>
+                    <span>{{ blog_post.author }}</span>
+                    <span>{{ blog_post.date }}</span>
+                    <p>{{ blog_post.excerpt }}</p>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+
+
+
 {% endblock %}
