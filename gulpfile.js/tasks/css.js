@@ -7,7 +7,7 @@ var gulp = require('gulp');
 var path = require('path');
 
 var sass = require('gulp-sass');
-// var sourcemaps = require('gulp-sourcemaps');
+var sourcemaps = require('gulp-sourcemaps');
 // var gutil = require('gulp-util');
 var plz = require("gulp-pleeease");
 var size = require('gulp-size');
@@ -17,7 +17,7 @@ var sourceFiles = path.join( config.paths.sass, '**', "*.scss" );
 
 gulp.task('css', function() {
     return gulp.src(sourceFiles, { base: config.paths.sass })
-        // .pipe(config.prod ? gutil.noop() : sourcemaps.init())
+        .pipe(config.prod ? gutil.noop() : sourcemaps.init())
         .pipe(sass())
         .on('error', function handleError(err) {
             console.log(err.message);
@@ -25,7 +25,7 @@ gulp.task('css', function() {
             this.emit('end');
         })
         .pipe(plz( config.PlzOptions ))
-        // .pipe(config.prod ? gutil.noop() : sourcemaps.write())
+        .pipe(config.prod ? gutil.noop() : sourcemaps.write())
         .pipe(size({ title: config.prod ? 'CSS' : 'CSS (unminified)', showFiles: true, gzip: config.prod }))
         .pipe(gulp.dest( config.paths.css ));
         // .pipe(bs.stream());

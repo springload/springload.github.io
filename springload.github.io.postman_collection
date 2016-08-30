@@ -1,0 +1,67 @@
+{
+	"variables": [],
+	"info": {
+		"name": "springload.github.io",
+		"_postman_id": "65b3f0fb-45ff-4089-adec-efbb5c43fabd",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://api.github.com/users/claireynz",
+			"request": {
+				"url": "https://api.github.com/users/claireynz",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.github.com/users/claireynz/repos?sort=pushed",
+			"request": {
+				"url": "https://api.github.com/users/claireynz/repos?sort=pushed",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://github.com/springload",
+			"request": {
+				"url": "https://github.com/springload",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.github.com/users/springload/repos?sort=pushed",
+			"request": {
+				"url": "https://api.github.com/users/springload/repos?sort=pushed",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
