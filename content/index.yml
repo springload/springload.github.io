@@ -35,6 +35,44 @@ data:
   blog_posts:
   - href: https://www.springload.co.nz/blog/being-pragmatic-about-accessibility/
     title: Being pragmatic about accessibility
-    author: Sam Sanders
     date: 06/07/2016
+    authors:
+    - Sam Sanders
     excerpt: We’ve put together a list of guiding principles on some pragmatic accessibility tasks that can (and should) be carried out on any project.
+  - href: https://www.springload.co.nz/blog/blurring-line-between-web-and-desktop-apps/
+    title: Blurring the line between web and desktop apps
+    date: 06/07/2016
+    authors:
+    - Thibaud Colas
+    excerpt: This is description
+  - href: https://www.springload.co.nz/blog/hosting-first-nz-wagtail-meetup/
+    title: Hosting the first NZ Wagtail meetup
+    date: 06/07/2016
+    authors:
+    - Jordi Tablada
+    excerpt: This is description
+  - href: https://www.springload.co.nz/blog/introduction-pattern-libraries/
+    title: An introduction to Pattern Libraries
+    date: 06/07/2016
+    authors:
+    - Josh Barr
+    excerpt: This is description
+  - href: https://www.springload.co.nz/blog/a-stable-front-end-stack-for-2016/
+    title: A stable front-end stack for 2016
+    date: 06/07/2016
+    authors:
+    - Thibaud Colas
+    excerpt: This is description
+  - href: https://www.springload.co.nz/blog/made-wagtail-hackathon/
+    title: Made with Wagtail - a hackathon
+    date: 06/07/2016
+    authors:
+    - Jordi Tablada
+    excerpt: This is description
+  - href: https://www.springload.co.nz/blog/introducing-wagtail/
+    title: Introducing Wagtail
+    date: 06/07/2016
+    authors:
+    - Jordi Tablada
+    - Richard McMillan
+    excerpt: This is description
