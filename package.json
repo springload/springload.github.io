@@ -30,7 +30,7 @@
   },
   "dependencies": {},
   "scripts": {
-    "start": "wrangler serve www/",
+    "start": "npm run watch -s",
     "lint": "",
     "test": "",
     "css": "gulp css",
@@ -38,7 +38,7 @@
     "content": "gulp content",
     "build": "gulp build",
     "dist": "NODE_ENV=production npm run build",
-    "watch": "",
+    "watch": "gulp watch",
     "shrinkwrap": "npm shrinkwrap --dev",
     "deploy": "git push origin master"
   }
