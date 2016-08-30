@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="{{ site.paths.css }}/site.css?{{ extensions.cachebuster }}" />
 </head>
 <body>
+    {% block svgs %}
+        <div style="display: none;">
+            {% include "core/includes/svg.html" %}
+        </div>
+    {% endblock %}
+
     <div class="content">
         <h1>{{ meta.title }}</h1>
 
@@ -42,9 +48,10 @@
                 <li><a href="https://www.twitter.com/springloadnz">Twitter</a></li>
               </ul>
             </div>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="i i-springload"><title>Springload</title><use xlink:href="#i-springload"></use></svg>
         </footer>
-
-
     </div>
 
     <script src="{{ site.paths.js }}/site.js?{{ extensions.cachebuster }}"></script>
