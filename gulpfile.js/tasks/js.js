@@ -12,7 +12,7 @@ var gutil = require('gulp-util');
 var size = require('gulp-size');
 var bundleCollapser = require('bundle-collapser/plugin');
 var source = require('vinyl-source-stream');
-// var bs = require('browser-sync').get('main');
+var bs = require('browser-sync').get('main');
 
 // var browserifyInstance = config.prod ? browserify : browserifyInc;
 var browserifyTransforms = [
@@ -49,13 +49,13 @@ gulp.task('js', function() {
     return bundler.bundle()
         .on('error', function handleError(err) {
             console.log(err.message);
-            // bs.notify(err.message, 10000);
+            bs.notify(err.message, 10000);
             this.emit('end');
         })
         .pipe(source(config.paths.appName))
         .pipe(buffer())
         .pipe(config.prod ? uglify() : gutil.noop())
         .pipe(size({ title: config.prod ? 'JS' : 'JS (unminified)', showFiles: true, gzip: config.prod }))
-        .pipe(gulp.dest(config.paths.js));
-        // .pipe(bs.stream());
+        .pipe(gulp.dest(config.paths.js))
+        .pipe(bs.stream());
 });
