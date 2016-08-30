@@ -1,9 +1,9 @@
-# ----------------------------------------------------------------------------- 
+# -----------------------------------------------------------------------------
 # Wrangler config
-# ----------------------------------------------------------------------------- 
+# -----------------------------------------------------------------------------
 # For more information, check out https://github.com/springload/Wrangler.py/
 
-wrangler: 
+wrangler:
 
     # -------------------------------------------------------------------------
     # General config
@@ -12,7 +12,7 @@ wrangler:
     templates_dir: templates
 
     # Default template to load if no template is specified for a page
-    default_template: template.j2
+    default_template: page.html
 
     # Default output file extension. Note this can be overwritten in the content
     # by specifying 'output_file_extension' in the 'meta' area
@@ -20,14 +20,14 @@ wrangler:
 
     # Supported data formats. Ensure a parser is registered for each type.
     # More information about parsers can be found in the link at the top of the file.
-    data_formats: ['yaml', 'yml', 'json', 'js', 'md', 'markdown']
+    data_formats: ['yml', 'json', 'md']
 
     # Ignore hidden files, and files starting with underscores
     ignore: ['.','_']
 
 
     # -------------------------------------------------------------------------
-    # Command line flags 
+    # Command line flags
     # -------------------------------------------------------------------------
     # Prints all the internal plumbing output to stdout
     verbose: false
@@ -43,7 +43,7 @@ wrangler:
     # -------------------------------------------------------------------------
     # Geeky stuff
     # -------------------------------------------------------------------------
-    # The location of the template cache zip file. 
+    # The location of the template cache zip file.
     # Ensure the var path exists and is writeable by the user
     build_cache_file: var/build.cache
     compiled_templates_file: var/jinja
@@ -55,32 +55,32 @@ wrangler:
 
 
 
-# ----------------------------------------------------------------------------- 
+# -----------------------------------------------------------------------------
 # Extensions
-# ----------------------------------------------------------------------------- 
+# -----------------------------------------------------------------------------
 extensions:
     # Sitemap generates a tree structure of your entire site, relative to the
-    # webroot specified here 
-    # 
+    # webroot specified here
+    #
     #   {{ extensions.sitemap }}
-    # 
+    #
     # We leave it up to you to iterate over the sitemap and print everything in
     # a pretty manner, but this gist might get you started:
     # https://gist.github.com/joshbarr/111
 
-    sitemap: 
+    sitemap:
         webroot: /
 
     # Cachebuster creates a timestamp so you can append it to your asset paths,
     # if you want:
-    # 
+    #
     #   <img src='path-to-my-image.png?{{ extensions.cachebuster }}' />
     #
-    cachebuster: 
+    cachebuster: true
 
     # Fileinfo allows you to pass the properties of certain files back to your
-    # template, for instance the filesize of a downloadable PDF or image. 
-    fileinfo: 
+    # template, for instance the filesize of a downloadable PDF or image.
+    fileinfo:
         directory: www/assets
         filetypes: ['pdf']
         webroot: www
@@ -90,24 +90,20 @@ extensions:
     #   cheese: cheddar
     #   animal: duck
     #   shape: circle
-    # 
+    #
     # Access it in your extension via config['extensions']['myextension']
     # The `extensions:` object is passed through to any extensions you create,
-    # so you can keep all your customisation here. Handy!  
+    # so you can keep all your customisation here. Handy!
 
 
-# ----------------------------------------------------------------------------- 
+# -----------------------------------------------------------------------------
 # Site variables
-# ----------------------------------------------------------------------------- 
+# -----------------------------------------------------------------------------
 # Your website's variables, available in your templates by calling
 # {{ site.paths.css }} for instance.
-site: 
-    paths: 
-        css: assets/css
-        js: assets/js
-        assets: assets
-        images: assets/images
-        webroot: www
-        app: app
-        content: content
+site:
+    cachebust: '?v=1'
+    paths:
+        css: /static/css
+        js: /static/js
 
