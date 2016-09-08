@@ -1,4 +1,4 @@
-[springload.github.io](https://springload.github.io/) [![Dependency Status](https://david-dm.org/springload/springload.github.io.svg?style=flat-square)](https://david-dm.org/springload/springload.github.io) [![devDependency Status](https://david-dm.org/springload/springload.github.io/dev-status.svg?style=flat-square)](https://david-dm.org/springload/springload.github.io#info=devDependencies)
+[springload.github.io](https://springload.github.io/) [![Build Status](https://travis-ci.org/springload/springload.github.io.svg?branch=master)](https://travis-ci.org/springload/springload.github.io) [![Dependency Status](https://david-dm.org/springload/springload.github.io.svg?style=flat-square)](https://david-dm.org/springload/springload.github.io) [![devDependency Status](https://david-dm.org/springload/springload.github.io/dev-status.svg?style=flat-square)](https://david-dm.org/springload/springload.github.io#info=devDependencies)
 =====================
 
 > Springload’s hub for open source
