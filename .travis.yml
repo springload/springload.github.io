@@ -1,8 +1,9 @@
-language: node_js
+language: python
 before_script:
 - export DISPLAY=:99.0
 - sh -e /etc/init.d/xvfb start
 install:
+  - nvm install
   - npm install
   - pip install wrangler
 script: npm run test:ci
