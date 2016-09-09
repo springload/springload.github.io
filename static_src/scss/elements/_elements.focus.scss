@@ -1,0 +1,22 @@
+*:active,
+*:focus {
+    outline: none;
+}
+
+// We have Js that adds outline when
+// keyboard tabbing but add back if no js
+// Use this function:
+// https://github.com/springload/frontend-starter-kit/blob/master/core/static_src/js/utils/index.js#L121
+.no-js {
+    *:focus {
+        outline: solid 3px $color-focus;
+    }
+}
+
+::selection {
+    background: $color-select; // WebKit/Blink Browsers
+}
+
+::-moz-selection {
+    background: $color-select; // Gecko Browsers
+}

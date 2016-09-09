@@ -1,0 +1,34 @@
+$color-brand-primary:               #378bb5;
+$color-brand-primary-highlight:     lighten($color-brand-primary, 5%);
+$color-brand-primary-shadow:        darken($color-brand-primary,  5%);
+
+$color-brand-secondary:             #c1813d;
+$color-brand-secondary-highlight:   lighten($color-brand-secondary, 5%);
+$color-brand-secondary-shadow:      darken($color-brand-secondary,  5%);
+
+// Common Colors
+$color-grey:                        #666;
+$color-grey-dark:                   #333;
+$color-grey-light:                  #999;
+$color-black:                       #000;
+$color-white:                       #fff;
+
+// Accessibilty Colors
+$color-focus:                       #6cc6ee;
+$color-select:                      #e5e5e5;
+$color-error:                       #f77;
+
+
+// Reassign literal variables to meaningful ones.
+$color-page-text:                   $color-grey-dark;
+$color-page-background:             #fff;
+
+$color-logo:                        $color-brand-primary;
+
+$color-links:                       inherit;
+
+$color-page-header:                 $color-page-text;
+$color-page-header-background:      #fff;
+
+$color-page-footer:                 $color-page-text;
+$color-page-footer-background:      #f3f3f3;

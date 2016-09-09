@@ -1,0 +1,41 @@
+// Fonts
+// ----------------------------------------------------------------------------
+$font-family-default-sans-serif: 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-default-serif: 'Georgia', 'Times New Roman', Times, serif;
+
+$base-font-size:        16px;
+$base-line-height:      24px;
+
+$line-height-headline:  1.2;
+
+$font-weight-light:     300;
+$font-weight-normal:    400;
+$font-weight-medium:    500;
+$font-weight-bold:      700;
+
+
+// Spacing
+// ----------------------------------------------------------------------------
+
+$base-spacing-unit:     1.5rem; // 24px
+
+$base-padding:          $base-spacing-unit;
+
+$spacing-grid:          $base-spacing-unit;
+
+$spacing:               $base-spacing-unit;
+// Smaller
+$spacing-half:          ($spacing / 2);
+// Larger
+$spacing-double:        ($spacing * 2);
+
+
+// Others
+// ----------------------------------------------------------------------------
+
+$base-radius:           3px;
+
+$base-transition:       all .1s ease-in;
+
+$ease:                  cubic-bezier(.43, .11, .41, 1);
+$easing-circ:           cubic-bezier(.075, .82, .165, 0);

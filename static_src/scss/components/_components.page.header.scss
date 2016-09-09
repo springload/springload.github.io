@@ -1,0 +1,24 @@
+$height-logo: 2.25rem;
+
+$height-header: $height-logo + (2 * $spacing-grid);
+
+.page-header {
+    @include clearfix;
+    background-color: $color-page-header-background;
+    color: $color-page-header;
+    padding: $spacing-grid;
+}
+
+.page-header--fixed {
+    position: fixed;
+    z-index: 10;
+    height: $height-header;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    + * {
+        margin-top: $height-header;
+    }
+}

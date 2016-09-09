@@ -1,9 +1,17 @@
-body {
-    background-color: #f09;
-}
+// -----------------------------------------------------------------------------
+// MAIN
+// -----------------------------------------------------------------------------
 
-.container {
-    display: flex;
+@import 'settings/index';
+@import 'tools/index';
 
-    .thing {}
-}
+@import 'generic/index';
+@import 'elements/index';
+@import 'objects/index';
+@import 'components/index';
+@import 'utilities/index';
+
+@import 'theming/index';
+
+// boilerplate print styles
+// @import 'h5bp-print-styles';
