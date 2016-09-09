@@ -1,20 +1,31 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div class="grid">
-        {% for project in data.projects %}
-            <div class="grid-item">
-                <a href="{{ project.href }}">
-                    <h3>{{ project.title }}</h3>
-                    <span>{{ project.star_count }}</span>
-                    <span>{{ project.fork_count }}</span>
-                    <p>{{ project.description }}</p>
-                </a>
-            </div>
-        {% endfor %}
+    <div class="page-width page-width--narrow section">
+        <div class="grid">
+            {% for project in data.projects %}
+                <div class="grid-item">
+                    <a href="{{ project.href }}">
+                        <h3>{{ project.title }}</h3>
+                        <span>
+                            <span class="icon-text">
+                                <span>The text</span>
+                                <svg>
+                                    <use xlink:href="#springload">
+                                </svg>
+                            </span>
+                            {{ project.star_count }}
+                        </span>
+                        <span>{{ project.fork_count }}</span>
+                        <p>{{ project.description }}</p>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
     </div>
 
-    <div class="grid">
+    <div class="page-width section">
+        <div class="grid">
         {% for blog_post in data.blog_posts %}
 
             {% if data.blog_posts.image %}
@@ -34,6 +45,8 @@
             </div>
         {% endfor %}
     </div>
+    </div>
+
 
 
 
