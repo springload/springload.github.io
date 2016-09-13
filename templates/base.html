@@ -1,10 +1,11 @@
 <!doctype html>
-<html>
-<head>
+<!--[if IE 8]> <html class="ie8 no-js" lang="en"><![endif]-->
+<!--[if !IE]><!--><html class="no-js" lang="en"><!--<![endif]--><head>
     <!-- Made by Springload -->
     <meta charset="utf-8">
-    <title>{{ meta.title }}</title>
+    <title>{{ site.name }} - {{ meta.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     {% include "core/includes/favicons.html" %}
     <link rel="stylesheet" href="{{ site.paths.css }}/site.css?{{ extensions.cachebuster }}" />
 </head>

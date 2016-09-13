@@ -3,8 +3,20 @@
 # -----------------------------------------------------------------------------
 # For more information, check out https://github.com/springload/Wrangler.py/
 
-wrangler:
+# -----------------------------------------------------------------------------
+# Site variables
+# -----------------------------------------------------------------------------
+# Your website's variables, available in your templates by calling
+# {{ site.paths.css }} for instance.
+site:
+    name: Springload OSS
+    domain: https://springload.github.io/
+    paths:
+        css: ''
+        js: ''
+        images: ''
 
+wrangler:
     # -------------------------------------------------------------------------
     # General config
     # -------------------------------------------------------------------------
@@ -81,9 +93,9 @@ extensions:
     # Fileinfo allows you to pass the properties of certain files back to your
     # template, for instance the filesize of a downloadable PDF or image.
     fileinfo:
-        directory: www/assets
+        directory: dist/assets
         filetypes: ['pdf']
-        webroot: www
+        webroot: dist
 
     # Add your custom extension config here:
     # myextension:
@@ -94,16 +106,3 @@ extensions:
     # Access it in your extension via config['extensions']['myextension']
     # The `extensions:` object is passed through to any extensions you create,
     # so you can keep all your customisation here. Handy!
-
-
-# -----------------------------------------------------------------------------
-# Site variables
-# -----------------------------------------------------------------------------
-# Your website's variables, available in your templates by calling
-# {{ site.paths.css }} for instance.
-site:
-    cachebust: '?v=1'
-    paths:
-        css: /static/css
-        js: /static/js
-

@@ -5,6 +5,7 @@
 # dist
 var/
 www/
+dist/
 static/
 templates/core/includes/svg.html
 
