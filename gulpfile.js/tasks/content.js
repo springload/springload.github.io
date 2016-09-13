@@ -4,5 +4,6 @@ const config = require('../config');
 
 gulp.task('content', shell.task([
     `wrangler build ${config.paths.content} ${config.paths.www} --force`,
+    `sed -i s/UA-XXXXXXX-X/${config.values.GOOGLE_ANALYTICS}/g ${config.paths.www}/*.html`,
 ]));
 

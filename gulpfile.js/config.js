@@ -9,6 +9,10 @@ var prod = process.env.NODE_ENV === 'production';
 module.exports = {
     prod: prod,
 
+    values: {
+        GOOGLE_ANALYTICS: prod ? 'UA-79835767-5' : 'UA-XXXXXXX-X',
+    },
+
     paths: {
         content: path.join('.', 'content'),
         templates: path.join('.', 'templates'),
@@ -16,8 +20,8 @@ module.exports = {
         sass: path.join(sourcePath, 'scss'),
         svg: path.join(sourcePath, 'svg'),
         imagesSrc: path.join(sourcePath, 'images'),
-        js: path.join(distPath, 'js'),
-        css: path.join(distPath, 'css'),
+        js: rootPath,
+        css: rootPath,
         appName: 'site.js',
         www: rootPath,
     },
