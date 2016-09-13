@@ -16,6 +16,7 @@
     "browserify": "^13.1.0",
     "bundle-collapser": "^1.2.1",
     "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.0.3",
     "gulp-pleeease": "^2.0.2",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
