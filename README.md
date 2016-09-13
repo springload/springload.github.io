@@ -69,3 +69,14 @@ npm run deploy
 | MS Edge | Desktop | latest |
 | Firefox | Desktop | latest |
 | Safari | OSX | latest |
+
+### Favicons
+
+To generate new favicons,
+
+1. Go to https://realfavicongenerator.net/
+2. Upload your favicon source file as an SVG or PNG with a resolution of at least 512x512.
+3. Configure the favicon generation. Use specific images for each platform if relevant.
+4. Grab the result files, [use ImageOptim to losslessly optimize their size](https://imageoptim.com/) them.
+5. Grab the result HTML tags, add it to the [`core/templates/core/includes/favicons.html`](core/templates/core/includes/favicons.html) file.
+6. Make sure the files are served by the server as expected.
