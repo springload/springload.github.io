@@ -15,6 +15,7 @@ module.exports = {
         jsSrc: path.join(sourcePath, 'js'),
         sass: path.join(sourcePath, 'scss'),
         svg: path.join(sourcePath, 'svg'),
+        imagesSrc: path.join(sourcePath, 'images'),
         js: path.join(distPath, 'js'),
         css: path.join(distPath, 'css'),
         appName: 'site.js',
