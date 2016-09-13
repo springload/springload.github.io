@@ -16,6 +16,7 @@ gulp.task('watch', ['build'], function() {
     ];
 
     gulp.watch(contentReload, ['content']);
+    gulp.watch(path.join(config.paths.svg, '**', '*.svg'), ['svg']);
     gulp.watch(path.join(config.paths.imagesSrc, '*.{png,gif,jpg,jpeg,svg}'), ['images']);
     gulp.watch(path.join(config.paths.sass, '**', '*.scss'), ['css']);
     gulp.watch(path.join(config.paths.jsSrc, '**', '*.js'), ['js']);
