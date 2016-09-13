@@ -3,6 +3,13 @@
 
 > Springload’s hub for open source
 
+## Important links
+
+| Documentation: see [#documentation](#documentation) :book:|
+|---------------------|
+|[Production site](https://springload.github.io/)|
+|[GA production tracking](https://analytics.google.com/analytics/web/?pli=1&authuser=1#report/defaultid/a79835767w120310427p125881929/)|
+
 ## Installation
 
 > Clone the project on your computer, and install [Node](https://nodejs.org). This project also uses [nvm](https://github.com/springload/frontend-starter-kit/blob/master/docs/useful-tooling.md#nvm).
