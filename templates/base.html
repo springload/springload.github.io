@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <title>{{ meta.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
-    <link rel="shortcut icon" href="{% include "core/includes/favicons.html" %}">
+    {% include "core/includes/favicons.html" %}
     <link rel="stylesheet" href="{{ site.paths.css }}/site.css?{{ extensions.cachebuster }}" />
 </head>
 <body>
