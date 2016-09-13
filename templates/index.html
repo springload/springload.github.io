@@ -4,14 +4,14 @@
     <div class="page-width page-width--narrow section">
         <div class="grid">
             {% for project in data.projects %}
-                <div class="grid-item">
+                <div class="grid-item projects">
                     <a href="{{ project.href }}">
                         <h3>{{ project.title }}</h3>
                         <span>
                             <span class="icon-text">
                                 <span>The text</span>
                                 <svg>
-                                    <use xlink:href="#springload">
+                                    <use xlink:href="#add">
                                 </svg>
                             </span>
                             {{ project.star_count }}
