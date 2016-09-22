@@ -71,6 +71,8 @@ This site is hosted on [GitHub Pages](https://pages.github.com/). The live site 
 # Create master branch
 gem install travis
 travis encrypt GH_TOKEN=<GitHub personal access token> --add
+# Go to https://travis-ci.org/springload/springload.github.io/settings,
+# Build only if .travis.yml is present: On
 ```
 
 ## Documentation
