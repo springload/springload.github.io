@@ -7,9 +7,5 @@ require('./tasks/js');
 
 const gulp = require('gulp');
 
-gulp.task('build:assets', [ 'css', 'js', 'svg', 'images']);
-gulp.task('build', ['build:assets', 'content']);
-
+gulp.task('build', ['css', 'js', 'images', 'content']);
 gulp.task('default', ['build']);
-
-
