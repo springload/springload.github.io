@@ -8,13 +8,15 @@ if "$CI"; then
 
   cd dist
   git init .
-  git commit -am "Deploy build #$TRAVIS_BUILD_NUMBER"
-  git push -f "https://${GH_TOKEN}@github.com/springload/springload.github.io" master
+  git add -f .
+  git commit -m "Deploy build #$TRAVIS_BUILD_NUMBER"
+  git push -f "https://${GH_TOKEN}@github.com/springload/springload.github.io"
 else
   cd dist
   git init .
-  git commit -am "Deploy locally to GitHub pages"
-  git push -f git@github.com:springload/springload.github.io.git master
+  git add -f .
+  git commit -m "Deploy locally to GitHub pages"
+  git push -f git@github.com:springload/springload.github.io.git
 fi
 
 echo -e "Finished deploy to GitHub Pages...\n"
