@@ -55,6 +55,6 @@
     "watch": "gulp watch",
     "shrinkwrap": "npm run lint:versions -s && npm shrinkwrap --dev && sed -i 's/https:/http:/g' npm-shrinkwrap.json",
     "deploy": "git push origin dev:deploy/production",
-    "deploy:force": "npm run dist && ./bin/deploy.sh"
+    "deploy:ci": "./bin/deploy.sh"
   }
 }
