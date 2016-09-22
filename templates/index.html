@@ -3,7 +3,6 @@
 {% block content %}
     <div class="page-width page-width--narrow section">
         <div class="grid">
-            <div data-latest-projects></div>
             {% for project in data.projects %}
                 <div class="grid-item projects" data-project data-project-title="{{ project.title }}">
                     <a href="{{ project.href }}">
@@ -41,9 +40,6 @@
             </div>
         {% endfor %}
     </div>
-    </div>
 
-
-
-
+    <div data-latest-projects></div>
 {% endblock %}
