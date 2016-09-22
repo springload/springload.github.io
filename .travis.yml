@@ -1,4 +1,8 @@
 language: python
+cache:
+  pip: true
+  directories:
+    - node_modules
 before_script:
 - export DISPLAY=:99.0
 - sh -e /etc/init.d/xvfb start
