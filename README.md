@@ -60,6 +60,19 @@ This project is [shrinkwrapped](https://docs.npmjs.com/cli/shrinkwrap). Its depe
 npm run deploy
 ```
 
+### Deployment configuration (one-off)
+
+Continuous integration & delivery is done with [Travis](https://travis-ci.org/springload/springload.github.io).
+
+This site is hosted on [GitHub Pages](https://pages.github.com/). The live site is the repository's `master` branch.
+
+```sh
+# Create deploy/production branch
+# Create master branch
+gem install travis
+travis encrypt GH_TOKEN=<GitHub personal access token> --add
+```
+
 ## Documentation
 
 ### Browser support

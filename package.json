@@ -54,6 +54,7 @@
     "dist": "NODE_ENV=production npm run build",
     "watch": "gulp watch",
     "shrinkwrap": "npm run lint:versions -s && npm shrinkwrap --dev && sed -i 's/https:/http:/g' npm-shrinkwrap.json",
-    "deploy": "git push origin master"
+    "deploy": "git push origin dev:deploy/production",
+    "deploy:force": "npm run dist && ./bin/deploy.sh"
   }
 }
