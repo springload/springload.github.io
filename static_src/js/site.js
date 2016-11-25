@@ -7,7 +7,7 @@ import LatestProjectList from './components/LatestProjectList';
 import request from 'superagent';
 import 'autotrack/lib/plugins/event-tracker';
 import 'autotrack/lib/plugins/outbound-link-tracker';
-
+import StreamGraph from './charts/StreamGraph';
 
 // Retreiving all of the springload github repos as json file
 request.get('https://api.github.com/users/springload/repos?sort=pushed')
@@ -38,3 +38,5 @@ iconContainer.forEach(elm => {
         elm
     );
 });
+
+StreamGraph(document.querySelector('[data-streamgraph]'))
