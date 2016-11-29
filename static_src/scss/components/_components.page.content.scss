@@ -1,12 +1,18 @@
 // Main content max width?
-.site-width {
+.content-width {
     max-width: $breakpoint-xlarge;
+    margin-left: auto;
+    margin-right: auto
 }
 
 // Vertical spacing
 .section {
     padding-top: $base-padding;
     padding-bottom: $base-padding;
+}
+
+.line-length {
+   max-width: 50rem;
 }
 
 .section--stacked {

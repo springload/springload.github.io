@@ -22,3 +22,42 @@ $height-header: $height-logo + (2 * $spacing-grid);
         margin-top: $height-header;
     }
 }
+
+.headline-container {
+    padding-top: 9%;
+    padding-bottom: 9%;
+}
+
+.headline {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+
+    font-size: 34px;
+
+    @include medium {
+        font-size: 46px;
+    }
+
+    @include large {
+        font-size: 60px;
+        max-width: 11em;
+    }
+}
+
+.headline__subheading {
+    font-weight: 600;
+    color: #808080;
+    max-width: 25em;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include small {
+        font-size: 19px;
+    }
+
+    @include xlarge {
+        font-size: 25px;
+    }
+}
