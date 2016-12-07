@@ -10,7 +10,7 @@ import 'autotrack/lib/plugins/outbound-link-tracker';
 import StreamGraph from './charts/StreamGraph';
 
 // Retreiving all of the springload github repos as json file
-request.get('https://api.github.com/users/springload/repos?sort=pushed')
+request.get('https://api.github.com/users/springload/repos?sort=pushed&per_page=9')
     .end((err, res) => {
         if (err) {
             console.log(err);
@@ -24,18 +24,12 @@ request.get('https://api.github.com/users/springload/repos?sort=pushed')
         }
     });
 
-ReactDOM.render(
-    <Main />,
-    document.getElementById('main')
-);
-
-
 const iconContainer = querySelectArray('[data-icon]');
 
-iconContainer.forEach(elm => {
+iconContainer.forEach(elt => {
     ReactDOM.render(
         <Icon name="tick" />,
-        elm
+        elt
     );
 });
 
