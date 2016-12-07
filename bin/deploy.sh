@@ -10,7 +10,7 @@ if "$CI"; then
     git init .
     git add -f .
     git commit -m "Deploy build #$TRAVIS_BUILD_NUMBER"
-    git push -f "https://${GH_TOKEN}@github.com/springload/springload.github.io"
+    git push -f "https://${GH_TOKEN}@github.com/springload/springload.github.io.git"
 else
     npm run dist
     cd dist
