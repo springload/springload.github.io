@@ -6,7 +6,9 @@ $height-header: $height-logo + (2 * $spacing-grid);
     @include clearfix;
     background-color: $color-page-header-background;
     color: $color-page-header;
-    padding: $spacing-grid;
+    padding-top: $spacing-grid;
+    padding-bottom: $spacing-grid;
+    box-shadow: 0 3px 5px 0 rgba(63,63,63,0.30);
 }
 
 .page-header--fixed {
@@ -48,7 +50,6 @@ $height-header: $height-logo + (2 * $spacing-grid);
 
 .headline__subheading {
     font-weight: 600;
-    color: #808080;
     max-width: 25em;
     margin-left: auto;
     margin-right: auto;

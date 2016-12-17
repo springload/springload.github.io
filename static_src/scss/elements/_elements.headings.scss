@@ -8,22 +8,22 @@ h1 {
     font-size: rem(34);
 
     @include medium {
-        font-size: rem(64);
+        font-size: rem(54);
         line-height: 1.1;
     }
 
     @include large {
-        font-size: rem(74);
+        font-size: rem(60);
         line-height: 1.05;
     }
 }
 
 h2 {
-    font-size: rem(22);
+    font-size: rem(34);
 }
 
 h3 {
-    font-size: rem(20);
+    font-size: rem(18);
 }
 
 h4 {

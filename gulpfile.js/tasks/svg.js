@@ -9,7 +9,7 @@ var config = require('../config');
 gulp.task('svg', function() {
     return gulp
         .src( path.join( config.paths.svg, '**', '*.svg' ) )
-        .pipe(rename({prefix: 'i-'}))
+        .pipe(rename({prefix: 'icon-'}))
         .pipe(svgmin())
         .pipe(svgstore({ inlineSvg: true }))
         .pipe(rename('svg.html'))

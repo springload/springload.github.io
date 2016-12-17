@@ -1,21 +1,46 @@
 {% extends "base.html" %}
 
+{% block body_class %}homepage t-clearsky{% endblock %}
+
 {% block content %}
-    <div class="page-width page-width--narrow section">
-        <div class="grid">
-            {% for project in data.projects %}
-                <div class="grid-item projects" data-project data-project-title="{{ project.title }}">
-                    <a href="{{ project.href }}">
-                        <h3>{{ project.title }}</h3>
-                        <span>
-                            <div data-icon></div>
-                            {{ project.star_count }}
-                        </span>
-                        <span>{{ project.fork_count }}</span>
-                        <p>{{ project.description }}</p>
-                    </a>
-                </div>
-            {% endfor %}
+    <div class="section content-width u-text-center">
+        <div class="gutters">
+            <div class="line-length headline-container u-auto">
+                <a class="u-block headline" href="https://www.springload.co.nz/">
+                    {{ ricky.icon(icon="springload-muted", title="Springload") }}
+                </a>
+                <h1 class="headline">{{ meta.title }}</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="section content-width u-text-center">
+        <div class="gutters">
+            <h2>Featured projects</h2>
+
+            <div class="grid">
+                {% for project in data.featured_projects %}
+                    <div class="grid-item card card--centered" data-project data-project-title="{{ project.title }}">
+                        <a href="{{ project.href }}">
+                            <h3>{{ project.title }}</h3>
+                            <span>
+                                <div data-icon></div>
+                                {{ project.star_count }}
+                            </span>
+                            <span>{{ project.fork_count }}</span>
+                            <p>{{ project.description }}</p>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="section content-width u-text-center">
+        <div class="gutters">
+            <h2>Open Source projects</h2>
+
+            <div data-latest-projects></div>
         </div>
     </div>
 
@@ -41,6 +66,5 @@
         {% endfor %}
     </div>
 
-    <div data-latest-projects></div>
     <div data-streamgraph></div>
 {% endblock %}

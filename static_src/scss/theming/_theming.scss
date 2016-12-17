@@ -2,27 +2,29 @@
 // Following themes will override the default
 
 $themes: (
-    'pink': (
-        theme-color: #f5b1d8,
-        text-color: #333
+    'brand': (
+        theme-color: $color-brand-primary,
+        text-color: #fff,
     ),
-    'grey': (
-        theme-color: #353535,
-        text-color: #b1b1b1
+
+    'clearsky': (
+        theme-color: #2196F3,
+        theme-gradient: linear-gradient(-180deg, #2196F3 19%, #81D4FA 100%),
+        text-color: #fff,
     ),
-    'blue': (
-        theme-color: #509ac7,
-        text-color: #333
-    )
 );
 
 
 @each $alias, $colors in $themes {
     $theme-color: map-get($colors, theme-color);
+    $theme-gradient: map-get($colors, theme-gradient);
     $text-color: map-get($colors, text-color);
 
     .t-#{$alias} {
 
+        @if $theme-gradient {
+            background-image: $theme-gradient;
+        }
         background-color: $theme-color;
         color: $text-color;
 
@@ -61,6 +63,13 @@ $themes: (
 
     .u-bg-color-#{$alias} {
         background-color: $theme-color;
+    }
+
+    @if $theme-gradient {
+        .u-bg-gradient-#{$alias} {
+            background-color: $theme-color;
+            background-image: $theme-gradient;
+        }
     }
 
     .u-text-color-#{$alias} {

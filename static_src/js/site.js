@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { querySelectArray } from './utils/index';
-import Main from './components/Main';
 import Icon from 'react-svg-icon';
 import LatestProjectList from './components/LatestProjectList';
 import request from 'superagent';

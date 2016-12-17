@@ -17,14 +17,3 @@
         font-size: medium; // Font-size medium reset the block to the context of body (ie, 16px)
         text-justify: auto;
     }
-
-    .projects {
-        border: 1px solid #ddd;
-        padding: 1rem;
-        margin-right: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    .projects:nth-child(3n) {
-        margin-right: 0;
-    }

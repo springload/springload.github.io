@@ -15,7 +15,7 @@ const LatestProjectList = React.createClass({
                 <h2>Latest projects</h2>
                 <div className="grid">
                     {projects.map((project) => (
-                        <div key={project.id} className="grid-item projects">
+                        <div key={project.id} className="grid-item card">
                             <a href={project.homepage || project.html_url}>
                                 <h3>{project.name}</h3>
                                 <span>

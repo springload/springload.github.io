@@ -1,0 +1,6 @@
+{# Internal macro to be used by component macro definitions. #}
+{% macro _component(name, component) -%}{% include "components/%s.html" % (name) %}{%- endmacro %}
+
+{# {% import "ricky.html" as ricky %} #}
+{# Example: {{ ricky.icon(icon="logo") }} #}
+{% macro icon() %}{{ _component('icon', kwargs) }}{% endmacro %}

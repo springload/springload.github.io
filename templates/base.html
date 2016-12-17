@@ -1,3 +1,5 @@
+{% import "ricky.html" as ricky %}
+
 <!doctype html>
 <!--[if IE 8]> <html class="ie8 no-js" lang="en"><![endif]-->
 <!--[if !IE]><!--><html class="no-js" lang="en"><!--<![endif]--><head>
@@ -9,7 +11,7 @@
     {% include "core/includes/favicons.html" %}
     <link rel="stylesheet" href="{{ site.paths.css }}/site.css?{{ extensions.cachebuster }}" />
 </head>
-<body>
+<body class="{% block body_class %}{% endblock %}">
     {% block svgs %}
         <div style="display: none;">
             {% include "core/includes/svg.html" %}
@@ -19,60 +21,23 @@
     <div class="page-header">
         <div class="content-width u-auto">
             <div class="gutters">
-                <svg class="i-springload">
-                    <title>Springload</title>
-                    <use xlink:href="#i-springload"></use>
-                </svg>
+                <a href="/">
+                    {{ ricky.icon(icon="leaf") }}
+                </a>
+
                 <ul class="nav-primary width-3/4@medium">
-                    <li class="nav-primary__link"><a href="#">Projects</a></li>
-                    <li class="nav-primary__link"><a href="#">Events</a></li>
-                    <li class="nav-primary__link"><a href="#">Blogs</a></li>
-                    <li class="nav-primary__link"><a href="#">GitHub</a></li>
-                    <li class="u-muted nav-primary__link"><a href="#">We're Hiring</a></li>
+                    <li class="nav-primary__link"><a href="https://github.com/springload">GitHub</a></li>
+                    <li class="nav-primary__link u-color-brand"><a href="#">We're Hiring!</a></li>
                 </ul>
             </div>
         </div>
     </div>
 
     <div class="content">
-        <div class="content-width u-auto">
-            <div class="gutters">
-                <div class="line-length headline-container u-auto">
-                    <h1 class="headline">{{ meta.title }}</h1>
-                    <h3 class="headline__subheading u-text-center">We build digital websites and applications that drive measurable change and help our clients' businesses grow. Let us help yours!</h3>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="content-width">
-                <div class="gutters">
-                    <h3>Featured projects</h3>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="content-width">
-                <div class="gutters">
-                    <h3>Upcoming events</h3>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="content-width">
-                <div class="gutters">
-                    <h3>Open Source Projects</h3>
-                </div>
-            </div>
-        </div>
-
-
         {% block content %}{% endblock %}
     </div>
 
-    <footer class="t-grey">
+    <footer class="page-footer">
         <div class="page-width page-width--narrow section">
             <div class="grid ">
                 <div class="grid-item">

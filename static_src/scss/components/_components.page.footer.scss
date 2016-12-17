@@ -1,4 +1,6 @@
 .page-footer {
     font-size: rem(12);
     padding: 2 * $base-padding $base-padding;
+    background-color: $color-page-footer-background;
+    color: $color-page-footer;
 }

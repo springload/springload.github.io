@@ -1,4 +1,4 @@
-.i {
+.icon {
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -8,15 +8,20 @@ svg > use {
     fill: currentColor;
 }
 
-.i--black {
+.icon--black {
     color: $color-black;
 }
 
-.i--white {
+.icon--white {
     color: $color-white;
 }
 
-.i-springload {
-    width: 10.5rem;
-    height: 1.75rem;
+.icon--leaf {
+    width: 33px;
+    height: 13px;
+}
+
+.icon--springload-muted {
+    width: 349px;
+    height: 57px;
 }

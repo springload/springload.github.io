@@ -1,0 +1,6 @@
+<svg class="icon icon--{{ component.icon }}{% if component.color %} icon--{{ component.color }}{% endif %}{% if component.class %} {{ component.class }}{% endif %}"{% if not component.title %} aria-hidden="true" aria-role="presentation"{% endif %}>
+    {%- if component.title %}
+    <title>{{ component.title }}</title>
+    {%- endif %}
+    <use xlink:href="#icon-{{ component.icon }}"{% if component.title %} aria-hidden="true" aria-role="presentation"{% endif %}></use>
+</svg>

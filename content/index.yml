@@ -1,37 +1,32 @@
 meta:
-  title: 'Springload OSS hub'
+  title: Open Source Software
   description: Springload OSS hub
   keywords:
   - Springload
   - OSS
+  - Open Source Software
   - Hub
   template: index.html
 data:
-  projects:
+  featured_projects:
   - href: https://wagtail.io/
+    full_name: wagtail/wagtail
     title: Wagtail
-    description: This is my awesome project description
+    description: The user-friendly, open source Django CMS
     star_count: 11
     fork_count: 11
-    featured: true
-  - href: https://github.com/springload/madewithwagtail
+  - href: http://madewithwagtail.org/
+    full_name: springload/madewithwagtail
     title: Made with Wagtail
-    description: This is my awesome project description
+    description: A showcase of sites and apps made with Wagtail
     star_count: 22
     fork_count: 22
-    featured: false
-  - href: https://springload.github.io/react-simpler-select/
-    title: react-simpler-select
-    description: This is my awesome project description
+  - href: https://github.com/springload/awesome-wagtail
+    full_name: springload/awesome-wagtail
+    title: awesome-wagtail
+    description: A curated list of awesome resources from the Wagtail community
     star_count: 33
     fork_count: 33
-    featured: false
-  - href: https://springload.github.io/react-svg-icon/
-    title: react-svg-icon
-    description: This is my awesome project description
-    star_count: 44
-    fork_count: 44
-    featured: false
   blog_posts:
   - href: https://www.springload.co.nz/blog/being-pragmatic-about-accessibility/
     title: Being pragmatic about accessibility
