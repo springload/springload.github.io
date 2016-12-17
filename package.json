@@ -29,6 +29,7 @@
     "gulp-uglify": "^1.5.4",
     "gulp-util": "^3.0.7",
     "loose-envify": "^1.2.0",
+    "sass-module-importer": "^1.4.0",
     "uglifyify": "^3.0.2",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
@@ -36,6 +37,7 @@
   "dependencies": {
     "autotrack": "^1.0.1",
     "d3": "^3.5.16",
+    "normalize.css": "^5.0.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-svg-icon": "^2.0.0",
