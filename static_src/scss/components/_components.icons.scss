@@ -22,6 +22,11 @@ svg > use {
 }
 
 .icon--springload-muted {
-    width: 349px;
-    height: 57px;
+    width: 116px;
+    height: 19px;
+
+    @include medium {
+        width: 349px;
+        height: 57px;
+    }
 }

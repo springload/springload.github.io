@@ -12,6 +12,11 @@ $themes: (
         theme-gradient: linear-gradient(-180deg, #2196F3 19%, #81D4FA 100%),
         text-color: #fff,
     ),
+
+    'dark': (
+        theme-color: #353535,
+        text-color: #fff,
+    ),
 );
 
 

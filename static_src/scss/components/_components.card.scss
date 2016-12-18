@@ -1,17 +1,46 @@
 .card {
-    background-color: $color-page-background;
-    color: $color-page-text;
-
-    padding: 1rem;
+    padding: 2rem 1rem;
     margin-right: 2rem;
     margin-bottom: 2rem;
     box-shadow: 0 3px 5px 0 rgba(0,0,0,0.30);
 
-    > a {
-        display: block;
-    }
+    background-color: $color-page-background;
+    color: $color-page-text;
 }
 
 .card--centered {
     text-align: center;
 }
+
+    .card__picture__wrapper {
+        @include medium {
+            min-height: 120px;
+        }
+    }
+
+    .card__picture {
+        width: auto;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100px;
+        margin-bottom: 1rem;
+    }
+
+    .card__link {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .card__description {
+        @include medium {
+            min-height: 48px;
+        }
+    }
+
+    .card__stars {
+        color: #FFB300;
+    }
+
+    .card__forks {
+        color: #607D8B;
+    }
