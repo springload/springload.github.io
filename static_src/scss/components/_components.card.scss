@@ -1,11 +1,14 @@
 .card {
     padding: 2rem 1rem;
-    margin-right: 2rem;
     margin-bottom: 2rem;
     box-shadow: 0 3px 5px 0 rgba(0,0,0,0.30);
 
     background-color: $color-page-background;
     color: $color-page-text;
+
+    @include medium {
+        margin-right: 2rem;
+    }
 }
 
 .card--centered {
