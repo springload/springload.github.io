@@ -29,7 +29,7 @@
                     {% else %}
                         {% set image = "placeholder-logo.svg" %}
                     {% endif %}
-                    <div class="grid-item width-full width-1/4@medium card card--centered" data-project data-project-title="{{ project.title }}">
+                    <div class="grid-item width-full width-1/3@medium width-1/4@large card card--centered" data-project data-project-title="{{ project.title }}">
                         <a class="card__link" href="{{ project.href }}">
                             <div class="card__picture__wrapper">
                                 <img class="card__picture" src="{{ site.paths.images }}/{{ image }}" aria-role="presentation" />
