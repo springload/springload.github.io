@@ -862,11 +862,13 @@ svg > use {
 
 .card {
   padding: 2rem 1rem;
-  margin-right: 2rem;
   margin-bottom: 2rem;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
   background-color: #fff;
   color: #333; }
+  @media only screen and (min-width: 768px) {
+    .card {
+      margin-right: 2rem; } }
 
 .card--centered {
   text-align: center; }
