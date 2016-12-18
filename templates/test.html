@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block body_class %}homepage t-clearsky{% endblock %}
+
+{% block content %}
+    <div class="section content-width u-text-center">
+        <div class="gutters">
+            <div class="line-length headline-container u-auto">
+                <a class="u-block headline" href="https://www.springload.co.nz/">
+                    {{ ricky.icon(icon="springload-muted", title="Springload") }}
+                </a>
+                <h1 class="headline">{{ meta.title }}</h1>
+                <p>
+                    Open Source Software plays a major role in how we build digital experiences.
+                    <br />We want to give back to our community by contributing to valuable,<br /> free and easy-to-use software.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section content-width u-text-center">
+        <div class="gutters">
+            <h2>Featured projects</h2>
+
+            <div class="grid">
+                {% for project in data.featured_projects %}
+                    {% if project.logo %}
+                        {% set image = project.logo %}
+                    {% else %}
+                        {% set image = "placeholder-logo.svg" %}
+                    {% endif %}
+                    <div class="grid-item width-full width-1/4@medium card card--centered" data-project data-project-title="{{ project.title }}">
+                        <a class="card__link" href="{{ project.href }}">
+                            <div class="card__picture__wrapper">
+                                <img class="card__picture" src="{{ site.paths.images }}/{{ image }}" aria-role="presentation" />
+                            </div>
+                            <h3 class="card__title">{{ project.title }}</h3>
+                            <p class="card__description">{{ project.description }}</p>
+                        </a>
+                        <a class="card__footer" href="https://github.com/{{ project.full_name }}">
+                            <span class="icon-text card__stars">{{ project.star_count }} {{ ricky.icon(icon="star", title="GitHub stars") }}</span>
+                            <span class="icon-text card__forks">{{ project.fork_count }} {{ ricky.icon(icon="fork", title="GitHub forks") }}</span>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="section content-width u-text-center">
+        <div class="gutters">
+            <h2>Open Source projects</h2>
+
+            <div data-latest-projects></div>
+        </div>
+    </div>
+
+    <div class="page-width section">
+        <div class="grid">
+        {% for blog_post in data.blog_posts %}
+
+            {% if data.blog_posts.image %}
+                {% set has_image = true %}
+            {% endif %}
+
+            <div class="grid-item">
+                <a href="{{ blog_post.href }}">
+                    {% if has_image %}
+                        <img src="{{ blog_post.image }}">
+                    {% endif %}
+                    <h3>{{ blog_post.title }}</h3>
+                    <span>{{ blog_post.author }}</span>
+                    <span>{{ blog_post.date }}</span>
+                    <p>{{ blog_post.excerpt }}</p>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div data-streamgraph></div>
+{% endblock %}

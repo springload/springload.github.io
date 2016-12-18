@@ -1,0 +1,96 @@
+meta:
+  title: Open Source
+  description: Open Source Software plays a major role in how we build digital experiences. We want to give back by contributing to valuable, free and easy-to-use software.
+  keywords:
+  - Springload
+  - OSS
+  - Open Source Software
+  - Hub
+  template: test.html
+data:
+  featured_projects:
+  - href: https://wagtail.io/
+    full_name: wagtail/wagtail
+    logo: wagtail-logo.svg
+    title: Wagtail
+    description: The user-friendly, open source Django CMS
+    star_count: 3900
+    fork_count: 798
+  - href: https://github.com/springload/frontend-starter-kit
+    full_name: springload/frontend-starter-kit
+    logo: fred-logo.png
+    title: Front-end starter kit
+    description: The building blocks of front-end development at Springload
+    star_count: 14
+    fork_count: 1
+  - href: http://madewithwagtail.org/
+    full_name: springload/madewithwagtail
+    logo: madewithwagtail-logo.svg
+    title: Made with Wagtail
+    description: A showcase of sites and apps made with Wagtail
+    star_count: 25
+    fork_count: 8
+  - href: https://github.com/springload/awesome-wagtail
+    full_name: springload/awesome-wagtail
+    logo: awesome-logo.svg
+    title: awesome-wagtail
+    description: A curated list of resources from the Wagtail community
+    star_count: 117
+    fork_count: 11
+  - href: https://github.com/springload/springtunes
+    full_name: springload/springtunes
+    logo: springtunes-logo.svg
+    title: Springtunes
+    description: Control your Spotify client remotely from your browser
+    star_count: 7
+    fork_count: 0
+  - href: https://github.com/springload/react-svg-icon
+    full_name: springload/react-svg-icon
+    title: react-svg-icon
+    description: SVG icon component for React
+    star_count: 7
+    fork_count: 0
+  blog_posts:
+  - href: https://www.springload.co.nz/blog/being-pragmatic-about-accessibility/
+    title: Being pragmatic about accessibility
+    date: 06/07/2016
+    authors:
+    - Sam Sanders
+    excerpt: We’ve put together a list of guiding principles on some pragmatic accessibility tasks that can (and should) be carried out on any project.
+  - href: https://www.springload.co.nz/blog/blurring-line-between-web-and-desktop-apps/
+    title: Blurring the line between web and desktop apps
+    date: 06/07/2016
+    authors:
+    - Thibaud Colas
+    excerpt: This is description
+  - href: https://www.springload.co.nz/blog/hosting-first-nz-wagtail-meetup/
+    title: Hosting the first NZ Wagtail meetup
+    date: 06/07/2016
+    authors:
+    - Jordi Tablada
+    excerpt: This is description
+  - href: https://www.springload.co.nz/blog/introduction-pattern-libraries/
+    title: An introduction to Pattern Libraries
+    date: 06/07/2016
+    authors:
+    - Josh Barr
+    excerpt: This is description
+  - href: https://www.springload.co.nz/blog/a-stable-front-end-stack-for-2016/
+    title: A stable front-end stack for 2016
+    date: 06/07/2016
+    authors:
+    - Thibaud Colas
+    excerpt: This is description
+  - href: https://www.springload.co.nz/blog/made-wagtail-hackathon/
+    title: Made with Wagtail - a hackathon
+    date: 06/07/2016
+    authors:
+    - Jordi Tablada
+    excerpt: This is description
+  - href: https://www.springload.co.nz/blog/introducing-wagtail/
+    title: Introducing Wagtail
+    date: 06/07/2016
+    authors:
+    - Jordi Tablada
+    - Richard McMillan
+    excerpt: This is description
