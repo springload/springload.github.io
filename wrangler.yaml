@@ -9,8 +9,10 @@
 # Your website's variables, available in your templates by calling
 # {{ site.paths.css }} for instance.
 site:
-    name: Springload OSS
+    title: Springload Open Source
+    description: Open Source Software plays a major role in how we build digital experiences. We want to give back by contributing to valuable, free and easy-to-use software.
     domain: https://springload.github.io/
+    twitter: springloadnz
     paths:
         css: ''
         js: ''

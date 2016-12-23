@@ -5,8 +5,10 @@
 <!--[if !IE]><!--><html class="no-js" lang="en"><!--<![endif]--><head>
     <!-- Made by Springload -->
     <meta charset="utf-8">
-    <title>{{ site.name }} - {{ meta.title }}</title>
+    <title>{{ site.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% include "core/includes/twitter_card.html" %}
 
     {% include "core/includes/favicons.html" %}
     <link rel="stylesheet" href="{{ site.paths.css }}/site.css?{{ extensions.cachebuster }}" />
