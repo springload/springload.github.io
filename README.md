@@ -102,3 +102,10 @@ To generate new favicons,
 4. Grab the result files, [use ImageOptim to losslessly optimize their size](https://imageoptim.com/) them.
 5. Grab the result HTML tags, add it to the [`core/templates/core/includes/favicons.html`](core/templates/core/includes/favicons.html) file.
 6. Make sure the files are served by the server as expected.
+
+### Inspirations
+
+- https://stripe.com/open-source
+- https://code.nasa.gov/
+- https://zeit.co/oss
+- http://airbnb.io/
