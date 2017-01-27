@@ -12,6 +12,15 @@
 
     {% include "core/includes/favicons.html" %}
     <link rel="stylesheet" href="{{ site.paths.css }}/site.css?{{ extensions.cachebuster }}" />
+
+    <script>
+        window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+        ga('create','UA-XXXXXXX-X','auto');
+        ga('require', 'eventTracker');
+        ga('require', 'outboundLinkTracker');
+        ga('send','pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
 </head>
 <body class="{% block body_class %}{% endblock %}">
     {% block svgs %}
@@ -74,14 +83,5 @@
     </div>
 
     <script async src="{{ site.paths.js }}/site.js?{{ extensions.cachebuster }}"></script>
-
-    <script>
-        window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-        ga('create','UA-XXXXXXX-X','auto');
-        ga('require', 'eventTracker');
-        ga('require', 'outboundLinkTracker');
-        ga('send','pageview');
-    </script>
-    <script async src="https://www.google-analytics.com/analytics.js"></script>
 </body>
 </html>
