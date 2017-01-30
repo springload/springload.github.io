@@ -1,7 +1,7 @@
 @mixin font-family($family) {
 
     @if ($family == 'sans-serif') {
-        font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-family: 'Metric', sans-serif;
     } @elseif ($family == 'serif') {
         font-family: 'Times New Roman', serif;
     } @else {
