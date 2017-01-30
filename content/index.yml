@@ -1,5 +1,5 @@
 meta:
-  title: Open Source
+  title: Open Source hub
   description: Open Source Software plays a major role in how we build digital experiences. We want to give back by contributing to valuable, free and easy-to-use software.
   keywords:
   - Springload
@@ -94,3 +94,8 @@ data:
     - Jordi Tablada
     - Richard McMillan
     excerpt: This is description
+  upcoming_events:
+  - href: https://djangogirls.org/wellington/
+    title: Django Girls
+    date: 10 - 11 December 2016
+    description: This is an event description

@@ -1,0 +1,72 @@
+// =============================================================================
+// Typography
+// =============================================================================
+
+// Metric
+
+/* Webfont: Metric-Light */
+@font-face {
+    font-family: 'MetricWebLight';
+    src: url('../fonts/MetricWeb-Light.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/MetricWeb-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/MetricWeb-Light.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/MetricWeb-Light.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/MetricWeb-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Metric-LightItalic */
+@font-face {
+    font-family: 'MetricWebLightItalic';
+    src: url('../fonts/MetricWeb-LightItalic.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/MetricWeb-LightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/MetricWeb-LightItalic.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/MetricWeb-LightItalic.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/MetricWeb-LightItalic.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Metric-Medium */
+@font-face {
+    font-family: 'MetricWebMedium';
+    src: url('../fonts/MetricWeb-Medium.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/MetricWeb-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/MetricWeb-Medium.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/MetricWeb-Medium.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/MetricWeb-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Metric-Regular */
+@font-face {
+    font-family: 'MetricWebRegular';
+    src: url('../fonts/MetricWeb-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/MetricWeb-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/MetricWeb-Regular.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/MetricWeb-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/MetricWeb-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Metric-Semibold */
+@font-face {
+    font-family: 'MetricWebSemibold';
+    src: url('../fonts/MetricWeb-Semibold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/MetricWeb-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/MetricWeb-Semibold.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/MetricWeb-Semibold.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/MetricWeb-Semibold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+
