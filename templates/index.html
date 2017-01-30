@@ -20,29 +20,57 @@
 
     <div class="section content-width u-text-center">
         <div class="gutters">
-            <h2>Featured projects</h2>
 
-            <div class="grid">
-                {% for project in data.featured_projects %}
-                    {% if project.logo %}
-                        {% set image = project.logo %}
-                    {% else %}
-                        {% set image = "placeholder-logo.svg" %}
-                    {% endif %}
-                    <div class="grid-item width-full width-1/3@medium width-1/4@large card card--centered" data-project data-project-title="{{ project.title }}">
-                        <a class="card__link" href="{{ project.href }}">
-                            <div class="card__picture__wrapper">
-                                <img class="card__picture" src="{{ site.paths.images }}/{{ image }}" aria-role="presentation" />
+            <div class="section">
+                <h2>Featured projects</h2>
+                <div class="grid-flex">
+                    {% for project in data.featured_projects %}
+                        {# TODO I don't know if this is the right way to do this? #}
+                        {% if loop.index <= 3 %}
+                            {% if project.logo %}
+                                {% set image = project.logo %}
+                            {% else %}
+                                {% set image = "placeholder-logo.svg" %}
+                            {% endif %}
+                            <div class="grid-item width-full width-3/10@medium width-1/4@large card" data-project data-project-title="{{ project.title }}">
+                                <a class="card__link" href="{{ project.href }}">
+                                    <div class="card__picture__wrapper">
+                                        <img class="card__picture" src="{{ site.paths.images }}/{{ image }}" aria-role="presentation" />
+                                    </div>
+                                    <h3 class="card__title">{{ project.title }}</h3>
+                                    <p class="card__description">{{ project.description }}</p>
+                                </a>
+                                <a class="card__footer" href="https://github.com/{{ project.full_name }}">
+                                    <span class="icon-text card__stars">{{ project.star_count }} {{ ricky.icon(icon="star", title="GitHub stars") }}</span>
+                                    <span class="icon-text card__forks">{{ project.fork_count }} {{ ricky.icon(icon="fork", title="GitHub forks") }}</span>
+                                </a>
                             </div>
-                            <h3 class="card__title">{{ project.title }}</h3>
-                            <p class="card__description">{{ project.description }}</p>
-                        </a>
-                        <a class="card__footer" href="https://github.com/{{ project.full_name }}">
-                            <span class="icon-text card__stars">{{ project.star_count }} {{ ricky.icon(icon="star", title="GitHub stars") }}</span>
-                            <span class="icon-text card__forks">{{ project.fork_count }} {{ ricky.icon(icon="fork", title="GitHub forks") }}</span>
-                        </a>
-                    </div>
-                {% endfor %}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="section">
+                <h2>Upcoming Events</h2>
+                <div class="grid-flex">
+                    {% for event in data.upcoming_events %}
+                        {% set image = "placeholder-logo.svg" %}
+
+                        <div class="grid-item width-full width-1/3@medium width-1/4@large card card--centered" data-project data-project-title="{{ project.title }}">
+                            <a class="card__link" href="{{ project.href }}">
+                                <div class="card__picture__wrapper">
+                                    <img class="card__picture" src="{{ site.paths.images }}/{{ image }}" aria-role="presentation" />
+                                </div>
+                                <h3 class="card__title">{{ event.title }}</h3>
+                                <h3 class="card__title">{{ event.date }}</h3>
+                                <p class="card__description">{{ event.description }}</p>
+                            </a>
+                            <a class="card__footer" href="https://github.com/{{ event.full_name }}">
+                                <span class="icon-text card__stars">{{ event.star_count }} {{ ricky.icon(icon="star", title="GitHub stars") }}</span>
+                                <span class="icon-text card__forks">{{ event.fork_count }} {{ ricky.icon(icon="fork", title="GitHub forks") }}</span>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>
