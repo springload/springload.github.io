@@ -23,65 +23,24 @@
     <script async src="https://www.google-analytics.com/analytics.js"></script>
 </head>
 <body class="{% block body_class %}{% endblock %}">
+
     {% block svgs %}
         <div style="display: none;">
             {% include "core/includes/svg.html" %}
         </div>
     {% endblock %}
 
-    <div class="page-header">
-        <div class="content-width u-auto">
-            <div class="gutters">
-                <a href="/">
-                    {{ ricky.icon(icon="leaf") }}
-                </a>
+    {% block header %}
+        {% include "core/includes/header.html" %}
+    {% endblock %}
 
-                <ul class="nav-primary width-3/4@medium">
-                    <li class="nav-primary__link"><a href="https://github.com/springload">GitHub</a></li>
-                    <li class="nav-primary__link u-color-brand"><a href="https://www.springload.co.nz/jobs/">We're Hiring!</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    {% block content %}{% endblock %}
 
-    <div class="content">
-        {% block content %}{% endblock %}
-    </div>
+    {% block footer %}
+        {% include "core/includes/footer.html" %}
+    {% endblock %}
 
-    <div class="page-footer t-dark">
-        <div class="page-width page-width--narrow section">
-            <div class="grid ">
-                <div class="grid-item">
-                  <h5>Company</h5>
-                  <ul class="list-inline">
-                    <li><a href="https://www.springload.co.nz/">About</a></li>
-                    <li><a href="https://www.springload.co.nz/jobs/">Jobs</a></li>
-                    <li><a href="https://www.springload.co.nz/contact-us/">Contact</a></li>
-                  </ul>
-                </div>
-
-                <div class="grid-item">
-                  <h5>Events</h5>
-                  <ul class="list-inline">
-                    <li><a href="https://www.meetup.com/Wellington-Wagtail-CMS-Meetup/">Wellington Wagtail CMS Meetup</a></li>
-                    <li><a href="https://www.meetup.com/React-Wellington/">React Wellington Meetup</a></li>
-                    <li><a href="https://www.meetup.com/Oulu-Web-Development/">Oulu Web Development</a></li>
-                  </ul>
-                </div>
-
-                <div class="grid-item">
-                  <h5>Discover</h5>
-                  <ul class="list-inline">
-                    <li><a href="https://www.springload.co.nz/blog/">Blog</a></li>
-                    <li><a href="https://github.com/springload">GitHub</a></li>
-                    <li><a href="https://www.twitter.com/springloadnz">Twitter</a></li>
-                  </ul>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <script async src="{{ site.paths.js }}/site.js?{{ extensions.cachebuster }}"></script>
 </body>
+
+<script async src="{{ site.paths.js }}/site.js?{{ extensions.cachebuster }}"></script>
 </html>

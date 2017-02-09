@@ -2,16 +2,16 @@ $height-logo: 2.25rem;
 
 $height-header: $height-logo + (2 * $spacing-grid);
 
-.page-header {
+.header {
     @include clearfix;
-    background-color: $color-page-header-background;
-    color: $color-page-header;
+    background-color: $color-header-background;
+    color: $color-header;
     padding-top: $spacing-grid;
     padding-bottom: $spacing-grid;
     box-shadow: 0 3px 5px 0 rgba(63,63,63,0.30);
 }
 
-.page-header--fixed {
+.header--fixed {
     position: fixed;
     z-index: 10;
     height: $height-header;
