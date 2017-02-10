@@ -1,60 +1,45 @@
-/*---------------*/
-/***** Zoe *****/
-/*---------------*/
-
-.card__footer {
-    top: auto;
-    bottom: 0;
-    padding: 1em;
-    height: 3.75em;
-    background: #fff;
-    color: #3c4a50;
-    -webkit-transition: -webkit-transform 0.35s;
-    transition: transform 0.35s;
-    -webkit-transform: translate3d(0,100%,0);
-    transform: translate3d(0,100%,0);
+.card:before,
+.card:after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    opacity: 0;
+    transition: opacity 0.4s, transform 0.4s;
 }
 
-.card__footer span {
-    float: right;
-    color: #3c4a50;
-    font-size: 1.4em;
+.card {
+    position: relative;
+    padding: 0;
+    min-height: 340px;
+    transition: transform 0.2s;
 }
 
-
-.card__footer span {
-    -webkit-transition: -webkit-transform 0.35s;
-    transition: transform 0.35s;
-    -webkit-transform: translate3d(0,200%,0);
-    transform: translate3d(0,200%,0);
+.card:before {
+    border-top: 1px solid #7DC265;
+    border-bottom: 1px solid #7DC265;
+    transform: scale(0,1);
 }
 
-.card a span::before {
-    display: inline-block;
-    padding: 8px 10px;
-    font-family: 'feathericons';
-    speak: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+.card:after {
+    border-left: 1px solid #7DC265;
+    border-right: 1px solid #7DC265;
+    transform: scale(1,0);
 }
 
-.card:hover .card__footer,
-.card:hover .card__footer span {
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
+.card:hover {
+    transform: scale(1.1);
+
+    &:before,
+    &:after {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
-.card:hover .card__footer span:nth-child(3) {
-    -webkit-transition-delay: 0.1s;
-    transition-delay: 0.1s;
-}
-
-.card:hover .card__footer span:nth-child(2) {
-    -webkit-transition-delay: 0.15s;
-    transition-delay: 0.15s;
-}
-
-.card:hover .card__footer span:first-child {
-    -webkit-transition-delay: 0.2s;
-    transition-delay: 0.2s;
+.card__container {
+    position: absolute;
+    padding: 2rem;
 }
