@@ -8,6 +8,6 @@ const options = {
 
 gulp.task('content', ['svg'], shell.task([
     `wrangler build ${config.paths.content} ${config.paths.www} --force`,
-    // `sed -i s/UA-XXXXXXX-X/${config.values.GOOGLE_ANALYTICS}/g ${config.paths.www}/*.html`,
+    `sed -i.bak -e 's/UA-XXXXXXX-X/${config.values.GOOGLE_ANALYTICS}/g' ${config.paths.www}/*.html && rm ${config.paths.www}/*.bak`
 ], options));
 
