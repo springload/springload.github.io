@@ -24,7 +24,7 @@
             <div class="section">
                 <h2>Featured projects</h2>
                 <div class="grid-flex">
-                    {% for project in data.projects %}
+                    {% for project in site.projects %}
                         {% if project.featured %}
                             {% if project.logo %}
                                 {% set image = project.logo %}
