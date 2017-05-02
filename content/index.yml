@@ -8,44 +8,51 @@ meta:
   - Hub
   template: index.html
 data:
-  featured_projects:
-  - href: https://wagtail.io/
-    full_name: wagtail/wagtail
+  projects:
+  - full_name: wagtail/wagtail
+    featured: true
+    href: https://wagtail.io/
     logo: wagtail-logo.svg
     title: Wagtail
     description: The user-friendly, open source Django CMS
     star_count: 4299
     fork_count: 921
-  - href: https://github.com/springload/frontend-starter-kit
-    full_name: springload/frontend-starter-kit
+  - full_name: springload/frontend-starter-kit
+    featured: true
+    href: https://github.com/springload/frontend-starter-kit
     logo: fred-logo.png
     title: Front-end starter kit
     description: The building blocks of front-end development at Springload
     star_count: 21
     fork_count: 2
-  - href: http://madewithwagtail.org/
-    full_name: springload/madewithwagtail
+  - full_name: springload/madewithwagtail
+    featured: true
+    href: http://madewithwagtail.org/
     logo: madewithwagtail-logo.svg
     title: Made with Wagtail
     description: A showcase of sites and apps made with Wagtail
     star_count: 31
     fork_count: 9
-  - href: https://github.com/springload/awesome-wagtail
-    full_name: springload/awesome-wagtail
+  - full_name: springload/awesome-wagtail
+    featured: true
+    href: https://github.com/springload/awesome-wagtail
     logo: awesome-logo.svg
     title: Awesome Wagtail
     description: A curated list of resources from the Wagtail community
     star_count: 225
     fork_count: 16
-  - href: https://github.com/springload/springtunes
-    full_name: springload/springtunes
+  - full_name: springload/springtunes
+    featured: true
+    href: https://github.com/springload/springtunes
     logo: springtunes-logo.svg
     title: Springtunes
     description: Control your Spotify client remotely from your browser
     star_count: 9
     fork_count: 0
-  - href: https://springload.github.io/react-accessible-accordion/
-    full_name: springload/react-accessible-accordion
+  - full_name: springload/react-accessible-accordion
+    featured: true
+    href: https://springload.github.io/react-accessible-accordion/
+    logo:
     title: react-accessible-accordion
     description: Accessible Accordion component for React
     star_count: 28
