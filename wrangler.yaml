@@ -16,6 +16,8 @@ site:
     projects:
       - full_name: wagtail/wagtail
         featured: true
+        themes:
+            - Wagtail
         href: https://wagtail.io/
         logo: wagtail-logo.svg
         title: Wagtail
@@ -24,6 +26,7 @@ site:
         fork_count: 921
       - full_name: springload/frontend-starter-kit
         featured: true
+        themes:
         href: https://github.com/springload/frontend-starter-kit
         logo: fred-logo.png
         title: Front-end starter kit
@@ -32,6 +35,8 @@ site:
         fork_count: 2
       - full_name: springload/madewithwagtail
         featured: true
+        themes:
+            - Wagtail
         href: http://madewithwagtail.org/
         logo: madewithwagtail-logo.svg
         title: Made with Wagtail
@@ -40,6 +45,8 @@ site:
         fork_count: 9
       - full_name: springload/awesome-wagtail
         featured: true
+        themes:
+            - Wagtail
         href: https://github.com/springload/awesome-wagtail
         logo: awesome-logo.svg
         title: Awesome Wagtail
@@ -48,6 +55,8 @@ site:
         fork_count: 16
       - full_name: springload/springtunes
         featured: true
+        themes:
+            - Wagtail
         href: https://github.com/springload/springtunes
         logo: springtunes-logo.svg
         title: Springtunes
@@ -56,11 +65,54 @@ site:
         fork_count: 0
       - full_name: springload/react-accessible-accordion
         featured: true
+        themes:
+            - React
         href: https://springload.github.io/react-accessible-accordion/
         logo:
         title: react-accessible-accordion
         description: Accessible Accordion component for React
         star_count: 28
+        fork_count: 0
+      - full_name: springload/reusable-d3-charts
+        featured: false
+        themes:
+            - D3
+        href: https://springload.github.io/reusable-d3-charts/
+        logo:
+        title: reusable-d3-charts
+        description: Reusable charts built with D3
+        star_count: 28
+        fork_count: 0
+      - full_name: springload/react-accessible-modal
+        featured: false
+        themes:
+            - React
+        href: https://springload.github.io/react-accessible-modal/
+        logo:
+        title: react-accessible-modal
+        description: Accessible modal dialog component for React
+        star_count: 5
+        fork_count: 0
+      - full_name: springload/draftail
+        featured: false
+        themes:
+            - React
+            - Wagtail
+        href: https://springload.github.io/draftail/
+        logo:
+        title: Draftail
+        description: A batteries-excluded rich text editor based on Draft.js
+        star_count: 18
+        fork_count: 1
+      - full_name: springload/wagtail-dev-tooling
+        featured: false
+        themes:
+            - Wagtail
+        href: https://springload.github.io/wagtail-dev-tooling/
+        logo:
+        title: wagtail-dev-tooling
+        description: Advanced tooling for Wagtail development
+        star_count: 3
         fork_count: 0
     paths:
         css: ''

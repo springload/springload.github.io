@@ -1,0 +1,10 @@
+meta:
+  title: React at Springload
+  template: theme.html
+data:
+  theme:
+    description: "[React](https://facebook.github.io/react/) is our de-facto standard to build rich user interfaces. Its main architectural pattern of declarative component hierarchies with a functional programming flavor is very well suited for modern UIs with a lot of moving parts."
+    name: React
+    icon: react
+    url: https://facebook.github.io/react/
+
