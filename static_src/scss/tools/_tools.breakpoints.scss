@@ -43,3 +43,12 @@ $breakpoint-xlarge: 1280px;
         @content;
     }
 }
+
+
+// Height Breakpoints
+
+@mixin smallDesk {
+    @media only screen and (min-height: rem($breakpoint-small)) and (min-width: rem($breakpoint-xsmall)) {
+        @content;
+    }
+}

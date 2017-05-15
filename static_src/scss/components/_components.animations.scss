@@ -1,0 +1,58 @@
+
+// =============================================================================
+// Cloud Animations
+// =============================================================================
+
+@keyframes orbitSmall {
+    0% {
+        transform: rotate(0deg) translate(-15px, 0px) rotate(-0deg) scale(.32, 1);
+     }
+    25% {
+        transform: rotate(90deg) translate(-15px, 0px) rotate(-90deg) scale(.32, 1);
+     }
+    50% {
+        transform: rotate(180deg) translate(-15px, 0px) rotate(-180deg) scale(.32, 1);
+    }
+    75% {
+        transform: rotate(270deg) translate(-15px, 0px) rotate(-270deg) scale(.32, 1);
+    }
+    100% {
+        transform: rotate(350deg) translate(-15px, 0px) rotate(-350deg) scale(.32, 1);
+    }
+}
+
+@keyframes orbitBig {
+    0% {
+        transform: rotate(0deg) translate(-60px, 5px) rotate(-0deg) scale(.32, 1);
+     }
+    25% {
+        transform: rotate(90deg) translate(-60px, 5px) rotate(-90deg) scale(.32, 1);
+     }
+    50% {
+        transform: rotate(180deg) translate(-60px, 5px) rotate(-180deg) scale(.32, 1);
+    }
+    75% {
+        transform: rotate(270deg) translate(-60px, 5px) rotate(-270deg) scale(.32, 1);
+    }
+    100% {
+        transform: rotate(358deg) translate(-60px, 5px) rotate(-358deg) scale(.32, 1);
+    }
+}
+
+@keyframes orbitBigDirection {
+    0% {
+        transform: rotate(0deg) translate(5px, 60px) rotate(-0deg) scale(.32, 1);
+     }
+    25% {
+        transform: rotate(92deg) translate(5px, 60px) rotate(-92deg) scale(.32, 1);
+     }
+    50% {
+        transform: rotate(182deg) translate(5px, 60px) rotate(-182deg) scale(.32, 1);
+    }
+    75% {
+        transform: rotate(272deg) translate(5px, 60px) rotate(-272deg) scale(.32, 1);
+    }
+    100% {
+        transform: rotate(360deg) translate(5px, 60px) rotate(-360deg) scale(.32, 1);
+    }
+}

@@ -45,3 +45,9 @@
     padding-top: 0;
     padding-bottom: 0;
 }
+
+// To make the clouds fall behind
+.push-forward {
+    position: relative;
+    z-index: 1;
+}
