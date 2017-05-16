@@ -1,3 +1,53 @@
+/* Webfont: Metric-Light */
+@font-face {
+  font-family: 'MetricWebLight';
+  src: url("../fonts/MetricWeb-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/MetricWeb-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/MetricWeb-Light.woff2") format("woff2"), url("../fonts/MetricWeb-Light.woff") format("woff"), url("../fonts/MetricWeb-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+
+/* Webfont: Metric-LightItalic */
+@font-face {
+  font-family: 'MetricWebLightItalic';
+  src: url("../fonts/MetricWeb-LightItalic.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/MetricWeb-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MetricWeb-LightItalic.woff2") format("woff2"), url("../fonts/MetricWeb-LightItalic.woff") format("woff"), url("../fonts/MetricWeb-LightItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+
+/* Webfont: Metric-Medium */
+@font-face {
+  font-family: 'MetricWebMedium';
+  src: url("../fonts/MetricWeb-Medium.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/MetricWeb-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/MetricWeb-Medium.woff2") format("woff2"), url("../fonts/MetricWeb-Medium.woff") format("woff"), url("../fonts/MetricWeb-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+
+/* Webfont: Metric-Regular */
+@font-face {
+  font-family: 'MetricWebRegular';
+  src: url("../fonts/MetricWeb-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/MetricWeb-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MetricWeb-Regular.woff2") format("woff2"), url("../fonts/MetricWeb-Regular.woff") format("woff"), url("../fonts/MetricWeb-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+
+/* Webfont: Metric-Semibold */
+@font-face {
+  font-family: 'MetricWebSemibold';
+  src: url("../fonts/MetricWeb-Semibold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/MetricWeb-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/MetricWeb-Semibold.woff2") format("woff2"), url("../fonts/MetricWeb-Semibold.woff") format("woff"), url("../fonts/MetricWeb-Semibold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -489,7 +539,7 @@ dd {
   margin-left: 1.5rem; }
 
 html {
-  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Metric', sans-serif;
   font-size: 1em;
   line-height: 1.5;
   background-color: #fff;
@@ -675,7 +725,7 @@ img[height] {
 
 .grid-flex {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   flex-wrap: wrap; }
 
 .grid--row-spacing {
@@ -860,15 +910,16 @@ svg > use {
       width: 349px;
       height: 57px; } }
 
+.icon--react {
+  width: 116px;
+  height: 116px; }
+
 .card {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
   background-color: #fff;
   color: #333; }
-  @media only screen and (min-width: 768px) {
-    .card {
-      margin-right: 2rem; } }
 
 .card--centered {
   text-align: center; }
@@ -1128,24 +1179,24 @@ svg > use {
     padding-right: 0;
     padding-left: 0; } }
 
-.page-footer {
+.footer {
   font-size: 0.75rem;
   padding: 3rem 1.5rem;
   background-color: #fff;
   color: #333; }
 
-.page-header {
+.header {
   background-color: #fff;
   color: #333;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   box-shadow: 0 3px 5px 0 rgba(63, 63, 63, 0.3); }
-  .page-header:after {
+  .header:after {
     display: table;
     content: '';
     clear: both; }
 
-.page-header--fixed {
+.header--fixed {
   position: fixed;
   z-index: 10;
   height: 5.25rem;
@@ -1153,7 +1204,7 @@ svg > use {
   bottom: 0;
   left: 0;
   right: 0; }
-  .page-header--fixed + * {
+  .header--fixed + * {
     margin-top: 5.25rem; }
 
 .headline-container {
@@ -1242,6 +1293,43 @@ svg > use {
 
 .rich-text br + br {
   display: none; }
+
+.card:before,
+.card:after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+  opacity: 0;
+  transition: opacity 0.4s, transform 0.4s; }
+
+.card {
+  position: relative;
+  padding: 0;
+  min-height: 340px;
+  transition: transform 0.2s; }
+
+.card:before {
+  border-top: 1px solid #7DC265;
+  border-bottom: 1px solid #7DC265;
+  transform: scale(0, 1); }
+
+.card:after {
+  border-left: 1px solid #7DC265;
+  border-right: 1px solid #7DC265;
+  transform: scale(1, 0); }
+
+.card:hover {
+  transform: scale(1.1); }
+  .card:hover:before, .card:hover:after {
+    opacity: 1;
+    transform: scale(1); }
+
+.card__container {
+  position: absolute;
+  padding: 2rem; }
 
 .u-disabled {
   pointer-events: none !important;
